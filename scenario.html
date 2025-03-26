@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario Planning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Scenario Planning Model</h1>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="zoning.html">Zoning Optimizer</a></li>
+        <li><a href="scenario.html">Scenario Planning</a></li>
+        <li><a href="financial.html">Financial Modeling</a></li>
+        <li><a href="emotional.html">Emotional Appeal Evaluator</a></li>
+        <li><a href="relativeEvaluation.html">Relative Evaluation</a></li>
+        <li><a href="marketingPlan.html">Marketing Plan</a></li>
+        <li><a href="constructionList.html">Construction List</a></li>
+        <li><a href="visuals.html">Visuals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="scenario">
+    <div class="form-container">
+      <label for="scenarioDemand">Market Demand (0 to 1):</label>
+      <input type="number" id="scenarioDemand" step="0.1" min="0" max="1" placeholder="Enter Market Demand" title="This input represents how much demand exists in the market for a property or type of real estate. Higher values indicate higher demand, influencing pricing projections and market conditions.">
+      <small>This input represents how much demand exists in the market for a property or type of real estate. Higher values indicate higher demand, influencing pricing projections and market conditions.</small>
+
+      <label for="scenarioCost">Construction Cost ($):</label>
+      <input type="number" id="scenarioCost" placeholder="Enter Construction Cost" title="This is the cost of construction for the property, crucial for scenario planning to assess investment and returns.">
+      <small>This is the cost of construction for the property, crucial for scenario planning to assess investment and returns in various market conditions.</small>
+
+      <button onclick="calculateScenario()">Calculate Scenario</button>
+    </div>
+    <div id="scenarioOutput"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Estate Tools. Rishab A Badaseshi. All rights reserved.</p>
+  </footer>
+
+  <script src="scenario.js"></script>
+</body>
+</html>

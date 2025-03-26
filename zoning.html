@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoning Optimizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Zoning Optimizer</h1>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="zoning.html">Zoning Optimizer</a></li>
+        <li><a href="scenario.html">Scenario Planning</a></li>
+        <li><a href="financial.html">Financial Modeling</a></li>
+        <li><a href="emotional.html">Emotional Appeal Evaluator</a></li>
+        <li><a href="relativeEvaluation.html">Relative Evaluation</a></li>
+        <li><a href="marketingPlan.html">Marketing Plan</a></li>
+        <li><a href="constructionList.html">Construction List</a></li>
+        <li><a href="visuals.html">Visuals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="zoning">
+    <div class="form-container">
+      <label for="size">Property Size (sqft):</label>
+      <input type="number" id="size" placeholder="Enter Property Size in sqft" title="This is the total land area of the property in square feet. It represents how much land is available for development or construction.">
+      <small>This is the total land area of the property in square feet. It represents how much land is available for development or construction.</small>
+      
+      <label for="demand">Market Demand (0 to 1):</label>
+      <input type="number" id="demand" step="0.1" min="0" max="1" placeholder="Enter Market Demand" title="This input represents the demand for the property in the market, usually on a scale from 0 to 1. A value closer to 1 means higher demand, while closer to 0 means lower demand.">
+      <small>This input represents the demand for the property in the market, usually on a scale from 0 to 1. A value closer to 1 means higher demand, while closer to 0 means lower demand.</small>
+
+      <label for="cost">Construction Cost ($):</label>
+      <input type="number" id="cost" placeholder="Enter Construction Cost" title="The total cost to build on the property. This includes all expenses like materials, labor, permits, etc.">
+      <small>The total cost to build on the property. This includes all expenses like materials, labor, permits, etc. It's an important input for calculating the potential return on investment (ROI).</small>
+
+      <button onclick="calculateZoning()">Calculate Zoning</button>
+    </div>
+    <div id="output"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Estate Tools. Rishab A Badaseshi. All rights reserved.</p>
+  </footer>
+
+  <script src="zoning.js"></script>
+</body>
+</html>

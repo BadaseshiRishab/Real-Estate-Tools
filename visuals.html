@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate Visuals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Real Estate Visuals</h1>
+    <nav class="top-nav">
+        <ul>
+          <li><a href="zoning.html">Zoning Optimizer</a></li>
+          <li><a href="scenario.html">Scenario Planning</a></li>
+          <li><a href="financial.html">Financial Modeling</a></li>
+          <li><a href="emotional.html">Emotional Appeal Evaluator</a></li>
+          <li><a href="relativeEvaluation.html">Relative Evaluation</a></li>
+          <li><a href="marketingPlan.html">Marketing Plan</a></li>
+          <li><a href="constructionList.html">Construction List</a></li>
+          <li><a href="visuals.html">Visuals</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <section class="visuals-section">
+    <h2>Generate Visuals</h2>
+    <p>Select a property type and time range to view relevant visuals.</p>
+
+    <!-- User Input Form -->
+    <div class="form-container">
+      <label for="propertyType">Property Type:</label>
+      <select id="propertyType">
+        <option value="" disabled selected>Select Property Type</option>
+        <option value="residential">Residential</option>
+        <option value="commercial">Commercial</option>
+        <option value="industrial">Industrial</option>
+      </select>
+
+      <label for="timeRange">Time Range (months):</label>
+      <input type="number" id="timeRange" placeholder="e.g. 6 or 12" />
+
+      <button onclick="generateVisuals()">Generate Visuals</button>
+    </div>
+
+    <!-- Dynamic Output Area -->
+    <div id="visualsOutput" style="margin-top: 2rem;">
+      <!-- We will inject images and charts here via JS -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Estate Tools. All rights reserved.</p>
+  </footer>
+
+  <!-- Include Chart.js from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Our custom JS -->
+  <script src="visuals.js"></script>
+</body>
+</html>

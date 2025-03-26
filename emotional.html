@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotional Appeal Evaluator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Emotional Appeal Evaluator</h1>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="zoning.html">Zoning Optimizer</a></li>
+        <li><a href="scenario.html">Scenario Planning</a></li>
+        <li><a href="financial.html">Financial Modeling</a></li>
+        <li><a href="emotional.html">Emotional Appeal Evaluator</a></li>
+        <li><a href="relativeEvaluation.html">Relative Evaluation</a></li>
+        <li><a href="marketingPlan.html">Marketing Plan</a></li>
+        <li><a href="constructionList.html">Construction List</a></li>
+        <li><a href="visuals.html">Visuals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="emotional">
+    <div class="form-container">
+      <label for="aestheticScore">Aesthetic Score (0-100):</label>
+      <input type="number" id="aestheticScore" min="0" max="100" placeholder="Enter Aesthetic Score">
+      <p>This score reflects how visually appealing the property is in terms of design, architecture, and overall look and feel.</p>
+
+      <label for="viewScore">View Score (0-100):</label>
+      <input type="number" id="viewScore" min="0" max="100" placeholder="Enter View Score">
+      <p>This score evaluates the view from the property. For example, does it have a city view, lake view, or green space view?</p>
+
+      <label for="amenityScore">Amenity Score (0-100):</label>
+      <input type="number" id="amenityScore" min="0" max="100" placeholder="Enter Amenity Score">
+      <p>This refers to the amenities available on the property, such as a swimming pool, gym, or terrace garden. A higher score means better amenities.</p>
+
+      <button onclick="calculateEmotionalAppeal()">Calculate Emotional Appeal</button>
+    </div>
+    <div id="emotionalOutput"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Estate Tools. Rishab A Badaseshi. All rights reserved.</p>
+  </footer>
+
+  <script src="emotional.js"></script>
+</body>
+</html>

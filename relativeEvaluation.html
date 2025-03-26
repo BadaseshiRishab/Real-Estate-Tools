@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Relative Evaluation Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Relative Evaluation of Property Cost</h1>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="zoning.html">Zoning Optimizer</a></li>
+        <li><a href="scenario.html">Scenario Planning</a></li>
+        <li><a href="financial.html">Financial Modeling</a></li>
+        <li><a href="emotional.html">Emotional Appeal Evaluator</a></li>
+        <li><a href="relativeEvaluation.html">Relative Evaluation</a></li>
+        <li><a href="marketingPlan.html">Marketing Plan</a></li>
+        <li><a href="constructionList.html">Construction List</a></li>
+        <li><a href="visuals.html">Visuals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="form-container">
+      <label for="supplyDemandIndex">Supply-Demand Index (0-1):</label>
+      <input type="number" id="supplyDemandIndex" step="0.1" min="0" max="1" placeholder="Enter Supply-Demand Index" />
+
+      <label for="macroIndex">Macroeconomic Index (0-1):</label>
+      <input type="number" id="macroIndex" step="0.1" min="0" max="1" placeholder="Enter Macroeconomic Index" />
+
+      <label for="socioIndex">Socio-Demographic Index (0-1):</label>
+      <input type="number" id="socioIndex" step="0.1" min="0" max="1" placeholder="Enter Socio-Demographic Index" />
+
+      <label for="zoningIndex">Zoning Changes Index (0-1):</label>
+      <input type="number" id="zoningIndex" step="0.1" min="0" max="1" placeholder="Enter Zoning Changes Index" />
+
+      <button onclick="evaluateProperty()">Evaluate Property</button>
+    </div>
+    <div id="output"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real Estate Tools. All rights reserved.</p>
+  </footer>
+  <script src="relativeEvaluation.js"></script>
+</body>
+</html>
